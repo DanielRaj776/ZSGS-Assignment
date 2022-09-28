@@ -31,6 +31,15 @@ class FourteSolution {
 		finelResult = operation(finelResult, op[3], operatorsIndex[2]);
 		if(finelResult == target)
 		    return index;
+		method = 2;
+		finelResult = operation((op[0]*10+op[1]),op[2],operatorsIndex[1]);
+		finelResult = operation(finelResult, op[3], operatorsIndex[2]);
+		if(finelResult == target)
+		    return index;
+		method = 3;
+		finelResult = operation((op[0] * 10 + op[1] * 10 + op[2]), op[3], operatorsIndex[2]);
+		if(finelResult == target)
+		    return index;
 		if(operatorsIndex[2] < 3) {
 		    operatorsIndex[2] = operatorsIndex[2] + 1;
 		}else {
@@ -93,6 +102,12 @@ class FourteSolution {
 	}else if(method == 1) {
 	    double[] temp = operants[operantPosition];
 	    System.out.printf("((%.0f %c %.0f) %c %.0f) %c %.0f\n", temp[0], operators[operatorsIndex[0]], temp[1], operators[operatorsIndex[1]], temp[2], operators[operatorsIndex[2]], temp[3]);
+	}else if(method == 2) {
+	    double[] temp = operants[operantPosition];
+	    System.out.printf("(%.0f %c %.0f) %c %.0f\n", temp[0] * 10 + temp[1], operators[operatorsIndex[1]], temp[2], operators[operatorsIndex[2]], temp[3]);
+	}else if(method == 3) {
+	    double[] temp = operants[operantPosition];
+	    System.out.printf("%.0f %c %.0f", (temp[0] * 10 + temp[1]) * 10 + temp[2], operators[operatorsIndex[2]], temp[3]);
 	}
     }
 }
