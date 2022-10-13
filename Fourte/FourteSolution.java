@@ -37,7 +37,7 @@ class FourteSolution {
 		if(finelResult == target)
 		    return index;
 		method = 3;
-		finelResult = operation((op[0] * 10 + op[1] * 10 + op[2]), op[3], operatorsIndex[2]);
+		finelResult = operation(((op[0] * 10 + op[1]) * 10 + op[2]), op[3], operatorsIndex[2]);
 		if(finelResult == target)
 		    return index;
 		if(operatorsIndex[2] < 3) {
