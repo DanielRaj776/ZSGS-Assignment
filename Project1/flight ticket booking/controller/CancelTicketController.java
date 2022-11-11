@@ -3,9 +3,9 @@ package controller;
 import java.util.LinkedList;
 
 import model.BookingDetails;
+import model.BookingState;
 import model.Plane;
 import repository.BookingList;
-import repository.BookingState;
 import repository.Flights;
 import view.CancelTicketView;
 

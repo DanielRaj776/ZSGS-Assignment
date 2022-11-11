@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.BookingDetails;
+import model.BookingState;
 import model.Passanger;
 import model.Plane;
 import repository.BookingList;
-import repository.BookingState;
 import repository.Flights;
 import view.CancelFlightView;
 
