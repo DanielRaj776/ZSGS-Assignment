@@ -1,7 +1,5 @@
 package model;
 
-import repository.BookingState;
-
 public class BookingDetails {
     private int bookingID;
     private BookingState bookingState;

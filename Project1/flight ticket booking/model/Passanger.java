@@ -1,7 +1,5 @@
 package model;
 
-import repository.Gender;
-
 public class Passanger {
     String name;
     int age;
