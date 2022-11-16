@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PassangerMenu {
-    Display display;
+    private Display display;
     
     public PassangerMenu() {
 	display = new Display();
@@ -19,7 +19,7 @@ public class PassangerMenu {
 	} while (!(selectedOption > 0 && selectedOption <= options.size()));
 	switch(selectedOption) {
 	case 1:{
-	    //TODO BOOK TICKET
+	    new BookTicketView().bookTicket();
 	    select();
 	    break;
 	}

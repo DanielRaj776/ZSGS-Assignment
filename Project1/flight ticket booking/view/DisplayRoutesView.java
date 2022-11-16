@@ -11,8 +11,8 @@ public class DisplayRoutesView {
     }
     
     public void displayRoutes () {
+	int i = 1;
 	for(List<String> route : displayRoutesController.getRoutes()) {
-	    int i = 1;
 	    System.out.print(i + " . ");
 	    for(String station : route) {
 		System.out.print(station + " || ");

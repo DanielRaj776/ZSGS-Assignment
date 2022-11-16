@@ -7,9 +7,11 @@ import java.util.List;
 public class Start {
     private Display display;
     private AdminLoginView adminLoginView;
+    private PassangerMenu passangerMenu;
     public Start() {
 	display = new Display();
 	adminLoginView = new AdminLoginView();
+	passangerMenu = new PassangerMenu();
     }
     private void startMenu () {
 	List<String> menuOptions = new ArrayList<>(Arrays.asList("Admin", "Passenger", "Exit"));
@@ -27,6 +29,7 @@ public class Start {
 	     break;
 	 }
 	 case 2:{
+	     passangerMenu.select();
 	     startMenu();
 	     break;
 	 }

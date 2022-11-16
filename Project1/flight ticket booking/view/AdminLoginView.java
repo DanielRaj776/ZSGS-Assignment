@@ -95,12 +95,12 @@ public class AdminLoginView {
 	} while (!(selectedOption > 0 && selectedOption <= optionsList.size()));
 	switch (selectedOption) {
 	case 1:{
-	    //TODO SEARCH FLIGHT
+	    new FlightSearchView().search();
 	    search();
 	    break;
 	}
 	case 2:{
-	    //TODO SEARCH PASSENGER
+	    new PassangerSearchView().search();
 	    search();
 	    break;
 	}
